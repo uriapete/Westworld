@@ -9,7 +9,7 @@ public:
     std::string name;
     std::string occupation;
 
-    void saySpecs(){};
+    void saySpecs();
     
     BasicHost(std::string nam,std::string occ);
     ~BasicHost();
@@ -26,5 +26,5 @@ BasicHost::~BasicHost()
 }
 
 void BasicHost::saySpecs(){
-    std::cout << "I am " << this->name << " and I am a " << this->occupation;
+    std::cout << "I am " << this->name << " and I am a " << this->occupation << ".\n";
 }
